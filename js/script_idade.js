@@ -21,5 +21,4 @@ formDados.addEventListener('submit', (evt)=>{
 
     divResultado.innerHTML = situacaoIdade
 
-
 })
