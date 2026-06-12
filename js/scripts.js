@@ -19,7 +19,7 @@ console.log(num)
 console.log(num2)
 console.log(num3)
 
-if (true){
+if (true) {
     let num4 = 420
     var num5 = 180
 
@@ -45,10 +45,10 @@ console.log("Valor de num " + num)
 console.log('Valor de num3 ', num3)
 console.log(`Valor de num2 ${num2}`)
 console.log('A soma dos números ' + (15 + 8))
-console.log('A soma dos números ',  15 + 8)
+console.log('A soma dos números ', 15 + 8)
 console.log(`A soma dos números ${15 + 8}`)
 console.log('A soma dos números ' + num + num2)
-console.log('A soma dos números ',  num2 + 8)
+console.log('A soma dos números ', num2 + 8)
 console.log(`A soma dos números ${num3 - num2}`)
 
 //OPERADORES MATEMÁTICOS
@@ -93,11 +93,12 @@ console.log('TESTE LÓGICO ', (10 > 5) && (15 < 8))
 console.log('TESTE LÓGICO ', (10 > 5) || (15 < 8))
 
 //TESTE LÓGICO
-let idade = 25
+let idade = 50
 
-if(idade >= 18){
+
+if (idade >= 18) {
     console.log('Maior de idade')
-}else{
+} else {
     console.log('Menor de idade')
 }
 
@@ -110,13 +111,13 @@ if(idade >= 18){
  */
 
 //ANINHAMENTO DE IF
-if (idade < 18){
+if (idade < 18) {
     console.log(`COM A IDADE DE ${idade}, NÃO É PERMITIDO POSSUIR CNH`)
-}else if(idade < 50){
+} else if (idade < 50) {
     console.log(`COM A IDADE DE ${idade}, 10 ANOS PARA RENOVAR`)
-}else if(idade < 70){
+} else if (idade < 70) {
     console.log(`COM A IDADE DE ${idade}, 5 ANOS PARA RENOVAR`)
-}else{
+} else {
     console.log(`COM A IDADE DE ${idade}, 3 ANOS PARA RENOVAR`)
 }
 
