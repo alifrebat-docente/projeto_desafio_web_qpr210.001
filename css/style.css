@@ -1,28 +1,41 @@
 body {
- font-family: Arial, sans-serif;
- background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background-color: #12627a;
 }
 
 h1 {
- color: rgb(213, 11, 4);
+    color: #f4f5f5;
+    font-size: 0.8em;
+    line-height: 25px;
 }
 
-h1, h3{
+h1,
+h3 {
     text-align: center;
 }
 
-label, input {
+h3{
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+label,
+input {
     display: block;
     margin: 10px 0px;
 }
-#div-form{
+
+#div-form {
+    color: #ffffff;
     background-color: #ded4d457;
     width: 400px;
     min-height: 350px;
     margin: 20px auto;
     padding: 20px;
 }
-#div-dados{
+
+#div-dados {
+    color: #12627a;
     background-color: #ffffff;
     width: 100%;
     height: 100px;
@@ -30,4 +43,6 @@ label, input {
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 25px;
+    padding: ;
 }
