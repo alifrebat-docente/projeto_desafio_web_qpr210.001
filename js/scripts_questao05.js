@@ -8,13 +8,22 @@ formDados.addEventListener('submit', (evt)=>{
 
     const objFormDados = new FormData(formDados)
 
-    let largura = parseFloat(objFormDados.get('largura'))
-    let altura = parseFloat(objFormDados.get('altura'))
+    let ld1 = parseFloat(objFormDados.get('lado1'))
+    let ld2 = parseFloat(objFormDados.get('lado2'))
+    let ld3 = parseFloat(objFormDados.get('lado3'))
+
+    let triangulo = ''
     
-    let area = largura * altura
+    if((ld1 == ld2) && (ld1 == ld3) && (ld2 == ld3)){
+        triangulo = 'Triângulo Equilátero'
+    }else if((ld1 != ld2) && (ld1 != ld3) && (ld2 != ld3)){
+           triangulo = 'Triângulo Escaleno'
+    }else{
+           triangulo = 'Triângulo Isócele'
+    }
 
 
-    divResultado.innerHTML = `A área a ser pintada é de ${area.toFixed(2).replace('.',',')}m², <br> Total de litros para pintar essa área é de ${parseFloat(area / 2).toFixed(2).replace('.',',')}l`
+    divResultado.innerHTML = `Lado1 ${ld1}, Lado2 ${ld2} e Lado3 ${ld3}, esse triângulo é ${triangulo}`
 
     formDados.reset()
 
